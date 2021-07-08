@@ -1,0 +1,20 @@
+name: E2E - Cluster 1
+
+on: [push, pull_request]
+
+jobs:
+  concurrency:
+    group: ${{ github.ref }}
+    cancel-in-progress: true
+  build:
+    name: Run endtoend tests on Cluster 1
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Take a moment
+        run: sleep 60
+
+      - name: Echo done
+        run: echo done

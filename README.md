@@ -1,3 +1,3 @@
 # demo-gh-action-concurrency
 
-test aa
+test 1

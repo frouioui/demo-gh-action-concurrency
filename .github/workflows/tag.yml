@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo done
-        run: echo done with latest change
+        run: echo done with latest change test

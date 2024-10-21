@@ -1,7 +1,10 @@
 name: Tag
 
 on:
-  tags:
+  push:
+    tags:
+      - ".*"
+
 
 jobs:
   build:

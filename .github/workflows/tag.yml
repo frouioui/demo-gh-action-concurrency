@@ -1,0 +1,12 @@
+name: Tag
+
+on:
+  tags:
+
+jobs:
+  build:
+    name: Run on tag
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo done
+        run: echo done
